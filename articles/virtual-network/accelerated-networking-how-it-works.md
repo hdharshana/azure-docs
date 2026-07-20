@@ -65,7 +65,7 @@ You can determine whether a particular interface is synthetic or VF by using a s
 $ ethtool -i <interface name> | grep driver
 ```
 
-If the driver is `hv_netvsc`, it's the synthetic interface. The VF interface uses a hardware-specific driver: an NVIDIA/Mellanox VF has a driver name that contains "mlx," and a MANA VF uses the "mana" driver. The VF interface is also identifiable because its `flags` field includes `SLAVE`. This flag indicates that it's under the control of the synthetic interface that has the same MAC address.
+If the driver is `hv_netvsc`, it's the synthetic interface. The VF interface uses a hardware-specific driver: an NVIDIA/Mellanox VF has a driver name that contains "mlx," and a MANA VF uses the "mana" driver.
 
 IP addresses are assigned only to the synthetic interface. The output of `ifconfig` or `ip addr` also shows this distinction.
 
