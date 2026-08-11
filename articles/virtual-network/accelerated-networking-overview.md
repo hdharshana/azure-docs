@@ -5,7 +5,7 @@ author: mattreatMSFT
 ms.author: mareat
 ms.service: azure-virtual-network
 ms.topic: how-to
-ms.date: 07/16/2026
+ms.date: 02/05/2026
 ms.custom: linux-related-content
 # Customer intent: "As a cloud architect, I want to implement Accelerated Networking on Azure VMs, so that I can enhance networking performance by reducing latency and CPU utilization for my high-demand applications."
 ---
@@ -53,7 +53,6 @@ Accelerated Networking is available in all global Azure regions and the Azure Go
 
 The following versions of Windows support Accelerated Networking for all interfaces:
 
-- Windows Server 2025
 - Windows Server 2022
 - Windows Server 2019
 - Windows Server 2016
