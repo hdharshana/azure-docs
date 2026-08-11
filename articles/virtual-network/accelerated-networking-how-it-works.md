@@ -21,7 +21,7 @@ Most network packets go directly between the Linux guest and the physical NIC wi
 
 Different Azure hosts use different NIC hardware. On NVIDIA/Mellanox-backed hosts, Linux automatically determines whether to use the `mlx4` or `mlx5` driver. MANA-backed hosts use the MANA driver. The Azure infrastructure controls the placement of the VM on the Azure host. You can't specify which physical NIC a VM deployment uses. The VMs must include the drivers for all supported NIC types. If you stop or deallocate and then restart a VM, the VM might be redeployed on hardware with a different NIC model. Therefore, it might use a different driver.
 
-If a VM image doesn't include a driver for the host's physical NIC (NVIDIA/Mellanox or MANA), networking capabilities continue to work at the slower speeds of the virtual NIC. The portal, the Azure CLI, and Azure PowerShell display the Accelerated Networking feature as _enabled_.
+If a VM image doesn't include a driver for the host's physical NIC, networking continues to work through the virtual NIC, and the portal, the Azure CLI, and Azure PowerShell continue to display Accelerated Networking as _enabled_. The performance impact depends on the host hardware. On NVIDIA/Mellanox-backed hosts, networking runs at the slower speeds of the virtual NIC. On MANA-backed hosts, the VM keeps networking connectivity and near-line-rate performance through the virtual NIC. To achieve the networking performance specified for the VM size, install the MANA driver in the guest operating system.
 
 FreeBSD provides the same support for Accelerated Networking as Linux when it's running in Azure. The remainder of this article describes Linux and uses Linux examples, but the same functionality is available in FreeBSD.
 
@@ -65,7 +65,7 @@ You can determine whether a particular interface is synthetic or VF by using a s
 $ ethtool -i <interface name> | grep driver
 ```
 
-If the driver is `hv_netvsc`, it's the synthetic interface. The VF interface uses a hardware-specific driver: an NVIDIA/Mellanox VF has a driver name that contains "mlx," and a MANA VF uses the "mana" driver.
+If the driver is `hv_netvsc`, it's the synthetic interface. The VF interface uses a hardware-specific driver: an NVIDIA/Mellanox VF has a driver name that contains "mlx," and a MANA VF uses the "mana" driver. The VF interface is also identifiable because its `flags` field includes `SLAVE`. This flag indicates that it's under the control of the synthetic interface that has the same MAC address.
 
 IP addresses are assigned only to the synthetic interface. The output of `ifconfig` or `ip addr` also shows this distinction.
 
