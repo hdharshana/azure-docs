@@ -44,7 +44,7 @@ The stack you evaluated doesn't need to exist yet. If it doesn't, what-if report
 What-if for deployment stacks shares the underlying [what-if limitations](./deploy-what-if.md) of Azure Resource Manager template deployments, including [result accuracy](./deploy-what-if.md#change-types) for certain resource types and properties. Always review the predicted changes carefully before you apply a stack, particularly when `actionOnUnmanage` is set to a delete option.
 
 - **Noise reduction doesn't remove every difference.** What-if filters many common differences that aren't real changes, but it doesn't filter all of them. For more information, see [Noise reduction](#noise-reduction).
-- **Stored results persist until their retention interval elapses.** Each what-if result is a resource in the scope you create it in, and it counts toward that scope's resource limits. A result that uses a retention interval longer than `PT3H` isn't deleted automatically, so delete results you no longer need. For more information, see [Retrieve and delete stored results](#retrieve-and-delete-stored-results).
+- **A scope can contain up to 800 what-if results.** Each what-if result is a resource in the scope where you create it, and each scope is limited to 800 what-if results. This limit is separate from the limit on deployments, so running what-if doesn't consume the deployment history for the scope. Because a result that uses a retention interval longer than `PT3H` isn't deleted automatically, delete results that you no longer need so that you don't approach the limit. For more information, see [Retrieve and delete stored results](#retrieve-and-delete-stored-results).
 
 ## How what-if works with deployment stacks
 
@@ -174,7 +174,7 @@ To preview the effect of an update on an existing stack, run the same what-if co
 
 ## Retrieve and delete stored results
 
-Because each what-if result is its own resource, you can list, retrieve, and delete results at any scope. Delete results you no longer need, especially when you set a retention interval longer than `PT3H`.
+Because each what-if result is its own resource, you can list, retrieve, and delete results at any scope. A scope is limited to 800 what-if results, so delete results you no longer need, especially when you set a retention interval longer than `PT3H`.
 
 # [Azure CLI](#tab/azure-cli)
 
