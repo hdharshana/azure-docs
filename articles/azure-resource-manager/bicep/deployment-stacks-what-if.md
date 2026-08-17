@@ -174,7 +174,7 @@ To preview the effect of an update on an existing stack, run the same what-if co
 
 ## Retrieve and delete stored results
 
-Because each what-if result is its own resource, you can list, retrieve, and delete results at any scope. A scope is limited to 800 what-if results, so delete results you no longer need, especially when you set a retention interval longer than `PT3H`.
+Because each what-if result is its own resource, you can list, retrieve, and delete results at any scope. A scope is limited to 800 what-if results, so delete results you no longer need, especially when you set a retention interval longer than `PT3H`. If you run what-if on every pull request, results accumulate quickly, so delete each result after the change is reviewed.
 
 # [Azure CLI](#tab/azure-cli)
 
