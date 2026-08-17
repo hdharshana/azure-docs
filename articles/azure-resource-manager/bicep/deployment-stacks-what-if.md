@@ -267,3 +267,4 @@ Use what-if as a confirmation step in interactive sessions and in pipelines:
 
 - **Interactively**, run the what-if command, review the predicted changes, and then run the stack create command to apply them.
 - **In automation**, capture the what-if result and gate the apply step on review or approval. This step is valuable for stacks because an update can detach or delete resources depending on the `actionOnUnmanage` setting.
+
