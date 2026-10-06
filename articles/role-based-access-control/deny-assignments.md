@@ -18,7 +18,7 @@ Similar to a role assignment, a *deny assignment* attaches a set of deny actions
 This article describes how to list deny assignments.
 
 > [!IMPORTANT]
-> Customer-managed deny assignments are currently in private preview. The availability of related APIs or commands in generated reference documentation doesn't indicate that the feature is in public preview or generally available. For generally available scenarios, deny assignments are created and managed by Azure.
+> Customer-managed deny assignments are currently in private preview. The availability of related APIs or commands in generated reference documentation doesn't indicate that the feature is in public preview or generally available. For generally available scenarios, Azure creates and manages deny assignments.
 
 ## How deny assignments are created
 
