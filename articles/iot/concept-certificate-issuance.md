@@ -43,7 +43,7 @@ For implementation guidance, see [Unified Azure IoT SDKs (preview) for IoT Hub a
 
 ## Cryptographic algorithms
 
-Certificate authorities created in Azure Device Registry use the following cryptographic standards for all certificates issued:
+Certificate authorities you create in Azure Device Registry use the following cryptographic standards for all certificates they issue:
 
 | Property | Value |
 |----------|-------|
