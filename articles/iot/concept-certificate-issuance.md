@@ -39,13 +39,11 @@ When a device provisions or reprovisions, it sends a CSR to DPS. DPS expects the
 
 - **Format:** Base64-encoded distinguished encoding rules (DER) following the public key cryptography standards (PKCS) #10 specification. Privacy-enhanced mail (PEM) headers and footers can't be included.
 - **Common name (CN):** The CN field must exactly match the device's DPS registration ID.
-- **Key algorithm:** Elliptic curve (EC) key using the NIST P-384 curve. RSA keys aren't supported.
-
 For implementation guidance, see [Unified Azure IoT SDKs (preview) for IoT Hub and Azure Device Registry](device-registry/concept-unified-iot-sdks.md).
 
 ## Cryptographic algorithms
 
-Certificate management uses the following cryptographic standards for all certificates issued by a certificate authority:
+Certificate authorities you create in Azure Device Registry use the following cryptographic standards for all certificates they issue:
 
 | Property | Value |
 |----------|-------|
