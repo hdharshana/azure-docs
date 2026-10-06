@@ -22,7 +22,7 @@ This article describes how to list deny assignments.
 
 ## How deny assignments are created
 
-For generally available scenarios, deny assignments are created and managed by Azure to protect resources. You can specify deny settings when creating a deployment stack, which creates a deny assignment that is owned by the deployment stack resources. For more information, see [Protect managed resources](../azure-resource-manager/bicep/deployment-stacks.md#protect-managed-resources) and [Azure RBAC limits](../azure-resource-manager/management/azure-subscription-service-limits.md#azure-rbac-limits).
+For generally available scenarios, Azure creates and manages deny assignments to protect resources. You can specify deny settings when creating a deployment stack, which creates a deny assignment that the deployment stack resources own. For more information, see [Protect managed resources](../azure-resource-manager/bicep/deployment-stacks.md#protect-managed-resources) and [Azure RBAC limits](../azure-resource-manager/management/azure-subscription-service-limits.md#azure-rbac-limits).
 
 ## Compare role assignments and deny assignments
 
