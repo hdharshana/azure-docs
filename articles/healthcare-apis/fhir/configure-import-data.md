@@ -24,7 +24,7 @@ This article describes how to configure import settings for the FHIR service and
 - The **FHIR Data Importer** application role assigned to the user or client application that calls the `$import` operation on the FHIR service. To learn more about application roles, see [Authentication and authorization for Azure Health Data Services](../authentication-authorization.md#application-roles).
 
   > [!NOTE]
-  > The FHIR Data Importer role is similar to an administrator role for data ingestion: it allows data to be ingested across resource types in the FHIR service, except for the `SearchParameter` resource type, which isn't supported by the import operation.
+  > The **FHIR Data Importer** role authorizes bulk ingestion through the `$import` operation across FHIR resource types. These import permissions are distinct from the permissions required to create or update resources through individual FHIR API calls. The `$import` operation doesn't support the `SearchParameter` resource type.
 
 ## Step 1: Enable a managed identity on the FHIR service for import
 

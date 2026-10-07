@@ -31,7 +31,7 @@ The FHIR&reg; service in Azure Health Data Services provides these roles:
 * **FHIR Data Importer**: Read and import ($import operator) data.
 
   > [!NOTE]
-  > The FHIR Data Importer role is similar to an administrator role for data ingestion: it allows data to be ingested across resource types in the FHIR service, except for the `SearchParameter` resource type, which isn't supported by the import operation.
+  > The **FHIR Data Importer** role authorizes bulk ingestion through the `$import` operation across FHIR resource types. These import permissions are distinct from the permissions required to create or update resources through individual FHIR API calls. The `$import` operation doesn't support the `SearchParameter` resource type.
 
 * **FHIR Data Contributor**: Perform all data plane operations.
 * **FHIR Data Converter**: Use the converter to perform data conversion.
