@@ -29,9 +29,13 @@ The FHIR&reg; service in Azure Health Data Services provides these roles:
 * **FHIR Data Writer**: Read, write, and soft delete FHIR data.
 * **FHIR Data Exporter**: Read and export ($export operator) data.
 * **FHIR Data Importer**: Read and import ($import operator) data.
+
+  > [!NOTE]
+  > The FHIR Data Importer role is similar to an administrator role for data ingestion: it allows data to be ingested across resource types in the FHIR service, except for the `SearchParameter` resource type, which isn't supported by the import operation.
+
 * **FHIR Data Contributor**: Perform all data plane operations.
 * **FHIR Data Converter**: Use the converter to perform data conversion.
-* **FHIR SMART User**: Allows user to read and write FHIR data according to [SMART IG V1.0.0 specifications](http://hl7.org/fhir/smart-app-launch/1.0.0/).
+* **FHIR SMART User**: Allows users to read FHIR data according to the [SMART IG V1.0.0 specification](https://hl7.org/fhir/smart-app-launch/1.0.0/) and [SMART IG V2.0.0 specification](https://hl7.org/fhir/smart-app-launch/STU2/).
 
 The DICOM&reg; service in Azure Health Data Services provides the following roles:
 
