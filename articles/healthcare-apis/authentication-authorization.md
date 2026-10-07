@@ -35,7 +35,7 @@ The FHIR&reg; service in Azure Health Data Services provides these roles:
 
 * **FHIR Data Contributor**: Perform all data plane operations.
 * **FHIR Data Converter**: Use the converter to perform data conversion.
-* **FHIR SMART User**: Allows users to read FHIR data according to the [SMART IG V1.0.0 specification](https://hl7.org/fhir/smart-app-launch/1.0.0/) and [SMART IG V2.0.0 specification](https://hl7.org/fhir/smart-app-launch/STU2/).
+* **FHIR SMART User**: Read FHIR data according to the [SMART IG V1.0.0 specification](https://hl7.org/fhir/smart-app-launch/1.0.0/) and [SMART IG V2.0.0 specification](https://hl7.org/fhir/smart-app-launch/STU2/).
 
 The DICOM&reg; service in Azure Health Data Services provides the following roles:
 
