@@ -9,7 +9,7 @@ ms.date: 07/06/2026
 
 ---
 
-# Azure Application Gateway WAF exceptions list (preview)
+# Azure Application Gateway WAF exceptions list
 
 **Applies to:** :heavy_check_mark: Application Gateway v2
 
