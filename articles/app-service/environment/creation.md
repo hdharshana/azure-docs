@@ -118,7 +118,7 @@ To create an App Service Environment in the Azure portal, do the following steps
 
 1. In the **Review + create** tab, check the accuracy of your configuration, and then select **Create**. Your App Service Environment can take more than one hour to create. 
 
-After the App Service Environment deployment completes, follow [Host a web app in an App Service Environment](using.md) to create a web app with a new or existing App Service plan. Select your environment in the **Region** list during web app creation.
+After the App Service Environment deployment finishes, follow [Host a web app in an App Service Environment](using.md) to create a web app with a new or existing App Service plan. Select your environment in the **Region** list during web app creation.
 
 ## Related content
 
