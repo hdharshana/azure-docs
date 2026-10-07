@@ -85,7 +85,7 @@ While signed in to their primary directory, a user with one of the following EA 
 
 The request is subject to the subscription policies configured for the source and target directories. For more information, see [Setting subscription policy](manage-azure-subscription-policy.md#setting-subscription-policy).
 
-When you try to create a subscription in a directory other than their primary directory (such as a customer's tenant), a _subscription creation request_ is created. You specify the subscription directory and subscription owner details on the Advanced tab when creating the subscription. The subscription owner must accept the subscription ownership request before the subscription is created. The subscription owner is the customer in the target tenant where the subscription is being provisioned.
+When you try to create a subscription in a directory other than their primary directory (such as a customer's tenant), a _subscription creation request_ is created. You specify the subscription directory and subscription owner details on the **Advanced** tab when creating the subscription. The subscription owner must accept the subscription ownership request before the subscription is created. The subscription owner is the customer in the target tenant where the subscription is being provisioned.
 
 :::image type="content" source="./media/create-enterprise-subscription/create-subscription-other-directory.png" alt-text="Screenshot showing Create a subscription outside the current directory." lightbox="./media/create-enterprise-subscription/create-subscription-other-directory.png" :::
 
