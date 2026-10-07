@@ -35,7 +35,7 @@ You need the following permissions to create subscriptions for an EA:
 For more information, see [Understand Azure Enterprise Agreement administrative roles in Azure](understand-ea-roles.md).
 
 > [!NOTE]
-> **Sign-in directory requirement:** Enterprise Administrators and Account Owners must be signed in to their **primary Microsoft Entra directory**, also referred to as their primary tenant, to create an Enterprise Agreement subscription. Subscription creation isn't supported while the user is signed in to another directory as a guest.
+> **Sign-in directory requirement:** Enterprise Administrators and Account Owners must be signed in to their **primary Microsoft Entra directory**, also referred to as their primary tenant, to create an Enterprise Agreement subscription. Subscription creation isn't supported while the user is signed in to another directory as a guest, irrespective of their Microsoft Entra role or permissions in that directory.
 
 ## Create an EA subscription
 
@@ -85,7 +85,7 @@ While signed in to their primary directory, a user with one of the following EA 
 
 The request is subject to the subscription policies configured for the source and target directories. For more information, see [Setting subscription policy](manage-azure-subscription-policy.md#setting-subscription-policy).
 
-When you try to create a subscription in a directory other than their primary directory (such as a customer's tenant), a _subscription creation request_ is created. You specify the subscription directory and subscription owner details on the **Advanced** tab when creating the subscription. The subscription owner must accept the subscription ownership request before the subscription is created. The subscription owner is the customer in the target tenant where the subscription is being provisioned.
+When you try to create a subscription in a directory other than their primary directory (such as a customer's tenant), a _subscription creation request_ is created. You specify the subscription directory and subscription owner details on the Advanced tab when creating the subscription. The subscription owner must accept the subscription ownership request before the subscription is created. The subscription owner is the customer in the target tenant where the subscription is being provisioned.
 
 :::image type="content" source="./media/create-enterprise-subscription/create-subscription-other-directory.png" alt-text="Screenshot showing Create a subscription outside the current directory." lightbox="./media/create-enterprise-subscription/create-subscription-other-directory.png" :::
 
