@@ -26,7 +26,7 @@ This article describes how to configure an object replication policy by using th
 
 Before you configure object replication, create the source and destination storage accounts if they don't already exist. The source and destination accounts can be either general-purpose v2 storage accounts or premium block blob accounts. For more information, see [Create an Azure Storage account](../common/storage-account-create.md).
 
-Object replication requires that blob versioning is enabled for both the source and destination account, and that blob change feed is enabled for the source account. To learn more about blob versioning, see [Blob versioning](versioning-overview.md). To learn more about change feed, see [Change feed support in Azure Blob Storage](storage-blob-change-feed.md). Keep in mind that enabling these features can result in additional costs.
+Object replication requires that blob versioning is enabled for both the source and destination account, and that blob change feed is enabled for the source account. To learn more about blob versioning, see [Blob versioning](versioning-overview.md). To learn more about change feed, see [Change feed support in Azure Blob Storage](storage-blob-change-feed.md). Keep in mind that enabling these features can result in additional costs. Enabling Object Replication prerequisites (blob versioning and change feed) requires the `Microsoft.Storage/storageAccounts/blobServices/write` permission. To learn more about permissions, see [Azure permissions for Storage](/azure/role-based-access-control/permissions/storage). Once an Object Replication policy is created, data replication operations from source to destination are expected. Granting this permission should therefore be understood as also granting permission to copy data between the source and destination accounts.
 
 To configure an object replication policy for a storage account, you must be assigned the Azure Resource Manager **Contributor** role, scoped to the level of the storage account or higher. For more information, see [Azure built-in roles](../../role-based-access-control/built-in-roles.md) in the Azure role-based access control (Azure RBAC) documentation.
 
@@ -363,8 +363,90 @@ To disable replicating blob index tags for exsiting rules, follow these steps:
 N/A.
 
 #### [Azure CLI](#tab/azure-cli)
+For more information, see [CLI documentation](/cli/azure/storage/account/or-policy)
 
-N/A.
+Enable tags replication on a new policy
+Add the `--tags-replication true` parameter when you create the policy on the destination account, then copy the policy definition to the source account.
+
+```azurecli
+az storage account or-policy create \
+    --resource-group <resource-group> \
+    --account-name <dest-storage-account> \
+    --source-account <source-storage-account> \
+    --destination-account <dest-storage-account> \
+    --source-container <source-container> \
+    --destination-container <dest-container> \
+    --tags-replication true
+```
+```azurecli
+az storage account or-policy show \
+    --resource-group <resource-group> \
+    --account-name <dest-storage-account> \
+    --policy-id <policy-id> |
+az storage account or-policy create \
+    --resource-group <resource-group> \
+    --account-name <source-storage-account> \
+    --policy "@-"
+```
+
+Enable tags replication on an existing policy
+Use the shared policy ID to update the flag on both accounts.
+
+```azurecli
+az storage account or-policy update \
+    --resource-group <resource-group> \
+    --account-name <source-storage-account> \
+    --policy-id <policy-id> \
+    --source-account <source-storage-account> \
+    --destination-account <dest-storage-account> \
+    --tags-replication true
+
+az storage account or-policy update \
+    --resource-group <resource-group> \
+    --account-name <dest-storage-account> \
+    --policy-id <policy-id> \
+    --source-account <source-storage-account> \
+    --destination-account <dest-storage-account> \
+    --tags-replication true
+```
+Verify that tags replication is enabled
+Query the `tagsReplication.enabled` property on each account. A return value of `true` confirms it's enabled.
+
+```azurecli
+az storage account or-policy show \
+    --resource-group <resource-group> \
+    --account-name <source-storage-account> \
+    --policy-id <policy-id> \
+    --query "tagsReplication.enabled" \
+    --output tsv
+
+az storage account or-policy show \
+    --resource-group <resource-group> \
+    --account-name <dest-storage-account> \
+    --policy-id <policy-id> \
+    --query "tagsReplication.enabled" \
+    --output tsv
+```
+Disable tags replication
+Set `--tags-replication false` on both the source and the destination account using the shared policy ID.
+
+```azurecli
+az storage account or-policy update \
+    --resource-group <resource-group> \
+    --account-name <source-storage-account> \
+    --policy-id <policy-id> \
+    --source-account <source-storage-account> \
+    --destination-account <dest-storage-account> \
+    --tags-replication false
+
+az storage account or-policy update \
+    --resource-group <resource-group> \
+    --account-name <dest-storage-account> \
+    --policy-id <policy-id> \
+    --source-account <source-storage-account> \
+    --destination-account <dest-storage-account> \
+    --tags-replication false
+```
 
 #### [REST API](#tab/rest-api)
 

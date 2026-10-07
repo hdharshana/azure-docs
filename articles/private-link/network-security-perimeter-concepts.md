@@ -6,7 +6,7 @@ author: asudbring
 ms.author: allensu
 ms.service: azure-private-link
 ms.topic: overview
-ms.date: 07/08/2026
+ms.date: 10/02/2026
 ms.custom:
   - references_regions, ignite-2024
   - ai-gen-docs-bap
@@ -16,15 +16,15 @@ ms.custom:
 
 # What is a network security perimeter?
 
-Azure Network Security Perimeter creates logical network boundaries around your platform-as-a-service (PaaS) resources that are deployed outside your virtual networks. Network security perimeter helps you control public network access to resources like Azure Storage accounts and Azure Key Vault by establishing a secure perimeter.
+Azure Network Security Perimeter creates logical network boundaries around your platform-as-a-service (PaaS) resources that you deploy outside your virtual networks. By establishing a secure perimeter, network security perimeter helps you control public network access to resources like Azure Storage accounts and Azure Key Vault.
 
 By default, network security perimeter restricts public access to PaaS resources within the boundary. You can grant exceptions through explicit access rules for inbound and outbound traffic. This approach helps prevent data exfiltration while maintaining necessary connectivity for your applications.
 
-For access patterns involving traffic from virtual networks to PaaS resources, see [What is Azure Private Link?](private-link-overview.md)
+For access patterns that involve traffic from virtual networks to PaaS resources, see [What is Azure Private Link?](private-link-overview.md)
 
 Features of a network security perimeter include:
 
-- Resource to resource access communication within perimeter members, preventing data exfiltration to nonauthorized destinations.
+- Resource-to-resource access communication within perimeter members, which prevents data exfiltration to nonauthorized destinations.
 - External public access management with explicit rules for PaaS resources associated with the perimeter.
 - Access logs for audit and compliance.
 - Unified experience across PaaS resources.
@@ -109,12 +109,14 @@ A network security perimeter-aware private link resource is a PaaS resource that
 | [Azure OpenAI service](/azure/ai-services/openai/how-to/network-security-perimeter) | Microsoft.CognitiveServices(kind="OpenAI") | | Public Preview | Not Available |
 | [Microsoft Foundry](/azure/ai-foundry/how-to/add-foundry-to-network-security-perimeter) | Microsoft.CognitiveServices/accounts<br>Microsoft.CognitiveServices(kind="AIServices") | | Generally Available | Generally Available |
 | [Azure Service Bus](/azure/service-bus-messaging/network-security-perimeter) | Microsoft.ServiceBus/namespaces | | Generally Available | Not Available |
+| [Event Grid](/azure/event-grid/configure-network-security-perimeter) | Microsoft.EventGrid/domains | | Public Preview | Not Available |
 
 > [!IMPORTANT]
 > The following onboarded services are in public preview with Network Security Perimeter:
 > - Cosmos DB
 > - SQL DB
 > - Azure OpenAI Service
+> - Event Grid
 >   
 > These previews are provided without a service level agreement, and it's not recommended for production workloads.
 > Certain features might not be supported or might have constrained capabilities.
@@ -132,9 +134,10 @@ Network security perimeter is currently available in all Azure public cloud regi
 Network security perimeter supports the following access rule types:
 
 | Direction | Access rule type | 
-|---------------------------|---------------|
+| --------------------------- | --------------- |
 | Inbound | Subscription-based rules |
-| Inbound | IP-based rules (check respective onboarded private link resources for v6 support)| 
+| Inbound | IP-based rules (check respective onboarded private link resources for v6 support) |
+| Inbound | [Service tags (Preview)](configure-network-security-perimeter-service-tag.md) |
 | Outbound | FQDN-based rules |
 
 > [!NOTE]

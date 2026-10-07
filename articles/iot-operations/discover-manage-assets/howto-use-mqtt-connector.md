@@ -6,7 +6,7 @@ ms.author: dobett
 ms.service: azure-iot-operations
 ms.subservice: azure-mqtt-broker
 ms.topic: how-to
-ms.date: 07/14/2026
+ms.date: 08/18/2026
 ai-usage: ai-assisted
 
 #CustomerIntent: As an industrial edge IT or operations user, I want configure my Azure IoT Operations environment so that I can access data from MQTT topics.
@@ -26,7 +26,6 @@ The following table summarizes the features that the connector for MQTT supports
 |---------|:---------:|-------|
 | Username/password authentication | Yes | Basic HTTP authentication |
 | X.509 user certificates (mTLS) | Yes | Certificates for client authentication and authorization |
-| Anonymous access | Yes | For testing purposes |
 | Southbound certificate trust list | Yes | MQTTS for secure communications with the inbound endpoint |
 | OpenTelemetry integration | Yes | |
 | WASM data transformation | Yes | Optionally transform incoming data using WebAssembly modules |
@@ -93,9 +92,9 @@ The connector also discovers assets from MQTT topics based on a topic filter and
 1. On the **Basic** page, add the endpoint details:
 
     - **External MQTT broker**: Add an endpoint name, server URL, and any authentication credentials.
-    - **Built-in MQTT broker**: Add a name for the endpoint, `mqtt://aio-broker:18883` as the server URL, and **Anonymous** for the authentication credentials.
+    - **Built-in MQTT broker**: Add a name for the endpoint, `mqtt://aio-broker:18883` as the server URL, and **Anonymous** for the authentication option.
 
-        > [!TIP]
+        > [!IMPORTANT]
         > The built-in MQTT broker configuration doesn't require authentication values and has a known URL. The values you enter are ignored.
 
 1. On the **Advanced** page, configure the topic discovery and broker connection settings:
@@ -217,6 +216,9 @@ This configuration deploys a new `device` resource called `mqtt-connector` to th
 
 The previous example uses the `Anonymous` authentication mode. This mode doesn't require a username or password.
 
+> [!IMPORTANT]
+> Anonymous authentication is only supported for connections to the built-in MQTT broker. It's not a supported option for external broker connections. The connector throws a config error if you choose it.
+
 To use the `Username password` authentication mode, complete the following steps:
 
 # [Operations experience](#tab/portal)
@@ -310,6 +312,9 @@ For background on how management groups and actions work across connectors, see:
 - [Manage and control the camera](howto-use-onvif-connector.md#manage-and-control-the-camera) — shows how a similar pattern is used for the connector for ONVIF.
 
 ## Transform incoming data
+
+> [!IMPORTANT]
+> To prevent collisions with reserved cloud headers, the connector doesn't propagate MQTT user properties from incoming messages to outgoing messages. To preserve the user properties, use the [user properties to payload sample](https://github.com/Azure-Samples/explore-iot-operations/blob/main/samples/wasm-user-props-to-payload/README.md) to add them to the message payload. The sample requires a top-level JSON object payload and adds the properties under the `_user_properties` key.
 
 [!INCLUDE [connector-transform-incoming-data](../includes/connector-transform-incoming-data.md)]
 

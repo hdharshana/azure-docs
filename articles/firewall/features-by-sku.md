@@ -5,7 +5,7 @@ services: firewall
 author: duongau
 ms.service: azure-firewall
 ms.topic: concept-article
-ms.date: 09/18/2025
+ms.date: 08/27/2026
 ms.author: duau
 # Customer intent: As a network security administrator, I want to understand all Azure Firewall features across different SKUs, so that I can choose the right version and effectively implement network security for our Azure Virtual Network resources.
 ---
@@ -46,10 +46,10 @@ The following table compares features across all Azure Firewall SKUs:
 |  | Service tags and FQDN tags for easy policy management | ✓ | ✓ | ✓ |
 |  | Easy DevOps integration using REST/PowerShell/CLI/templates/Terraform | ✓ | ✓ | ✓ |
 | **Advanced networking** | Multiple public IP addresses | ✓ | Up to 250 | Up to 250 |
-|  | Forced tunneling |  | ✓ | ✓ |
+|  | Forced tunneling |✓ | ✓ | ✓ |
 |  | Deployment without public IP address in Forced Tunnel Mode |  | ✓ | ✓ |
 | **Compliance** | Certifications (PCI, SOC, ISO) | ✓ | ✓ | ✓ |
-|  | Payment Card Industry Data Security Standard (PCI DSS) compliance |  |  | ✓ |
+|  | Capabilities for PCI DSS payment processing environments |  |  | ✓ |
 
 ## Azure Firewall Basic features
 
@@ -83,6 +83,8 @@ Azure Firewall Basic is designed for small and medium-sized businesses (SMBs) to
 
 - **Certifications**: Azure Firewall Basic is Payment Card Industry (PCI), Service Organization Controls (SOC), and International Organization for Standardization (ISO) compliant.
 
+- **Forced Tunneling**: You can configure Azure Firewall to route all Internet-bound traffic to a designated next hop instead of going directly to the Internet. For example, you can have an on-premises edge firewall or other network virtual appliance (NVA) to process network traffic before it's passed to the Internet.
+
 ### Basic limitations
 
 - **Throughput**: Limited to 250 Mbps
@@ -90,7 +92,6 @@ Azure Firewall Basic is designed for small and medium-sized businesses (SMBs) to
 - **Threat intelligence**: Alert mode only (cannot deny traffic)
 - **Network FQDN filtering**: Not supported (application FQDN filtering only)
 - **Web categories**: Not supported
-- **Forced tunneling**: Not supported
 
 ## Azure Firewall Standard features
 
@@ -160,7 +161,7 @@ Premium includes all Standard features, plus:
 
 - **Enhanced performance**: Azure Firewall Premium uses a more powerful virtual machine SKU and can scale up to 100 Gbps with 10 Gbps fat flow support.
 
-- **PCI DSS compliance**: The Premium SKU complies with Payment Card Industry Data Security Standard (PCI DSS) requirements, making it suitable for processing payment card data.
+- **PCI DSS payment processing**: The Premium SKU provides the capabilities that payment processing environments typically require to meet Payment Card Industry Data Security Standard (PCI DSS) requirements, such as TLS inspection and IDPS.
 
 ### Premium-only capabilities
 
@@ -201,11 +202,11 @@ All SKUs are:
 - Service Organization Controls (SOC) compliant  
 - International Organization for Standardization (ISO) compliant
 
-Premium additionally provides PCI DSS compliance for payment processing environments.
+Premium also provides the capabilities that payment processing environments typically require to meet Payment Card Industry Data Security Standard (PCI DSS) requirements, such as TLS inspection and IDPS. The PCI DSS Level 1 certification itself applies to Azure Firewall across all SKUs.
 
 ## Next steps
 
 - [Choose the right Azure Firewall SKU to meet your needs](choose-firewall-sku.md)
 - [Deploy and configure Azure Firewall using the Azure portal](tutorial-firewall-deploy-portal-policy.md)
 - [Azure Firewall Premium certificates](premium-certificates.md)
-- [Learn more about Azure network security](../networking/security/index.yml)
+- [Learn more about Azure network security](../networking/security/index.yml).
