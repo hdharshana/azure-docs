@@ -114,7 +114,7 @@ If your App Service Environment is made with an external VIP, your apps are auto
 
 - When you [create your App Service Environment](creation.md#create-an-app-service-environment-in-the-portal), if you select automatic configuration of Azure DNS private zones, Azure configures the DNS for you in the virtual network of your App Service Environment.
 
-- If you chose to configure DNS manually when you created the App Service Environment, you need to [use your own DNS server](#use-your-own-dns-server) or [configure Azure DNS private zones](#configure-dns-in-azure-dns-private-zone).
+- If you choose to configure DNS manually when you create the App Service Environment, you need to [use your own DNS server](#use-your-own-dns-server) or [configure Azure DNS private zones](#configure-dns-in-azure-dns-private-zone).
 
 You can find the IP addresses for the App Service Environment in the Azure portal:
 
