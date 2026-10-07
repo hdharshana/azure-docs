@@ -19,7 +19,7 @@ An [Azure App Service plan](overview-hosting-plans.md) provides the resources th
 ## Create an App Service plan
 
 > [!TIP]
-> If you want to create a plan in an App Service Environment, select an existing environment in the **Region** list and follow the rest of the steps as described in this section. If you need a new environment, [create the environment](environment/creation.md) and wait for its deployment to complete before creating the plan. In the Azure portal, environment creation is a separate operation from web app or App Service plan creation.
+> To create a plan in an App Service Environment, select an existing environment in the **Region** list and follow the rest of the steps in this section. To create a new environment, [create the environment](environment/creation.md) and wait for its deployment to complete before creating the plan. In the Azure portal, environment creation is a separate operation from web app or App Service plan creation.
 
 You can create an empty App Service plan, or you can create a plan as part of app creation.
 
