@@ -171,7 +171,7 @@ To preview the effect of an update on an existing stack, run the same what-if co
 
 ## Retrieve and delete stored results
 
-Because each what-if result is its own resource, you can list, retrieve, and delete results at any scope. A scope is limited to 800 what-if results. Results are deleted automatically when their retention interval elapses, and you can delete a result before then when you no longer need it.
+Because each what-if result is its own resource, you can list, retrieve, and delete results at any scope. A scope is limited to 800 what-if results. Azure deletes results automatically when their retention interval elapses, and you can delete a result before then when you no longer need it.
 
 # [Azure CLI](#tab/azure-cli)
 
