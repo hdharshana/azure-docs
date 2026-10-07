@@ -112,7 +112,7 @@ You use the `scm` URL to access the Kudu console, or publish your app by using w
 
 If your App Service Environment is made with an external VIP, your apps are automatically put into public DNS. If your App Service Environment is made with an internal VIP, you might need to configure DNS manually.
 
-- When you [created your App Service Environment](creation.md#create-an-app-service-environment-in-the-portal), if you selected automatic configuration of Azure DNS private zones, the DNS is configured for you in the virtual network of your App Service Environment.
+- When you [create your App Service Environment](creation.md#create-an-app-service-environment-in-the-portal), if you select automatic configuration of Azure DNS private zones, Azure configures the DNS for you in the virtual network of your App Service Environment.
 
 - If you chose to configure DNS manually when you created the App Service Environment, you need to [use your own DNS server](#use-your-own-dns-server) or [configure Azure DNS private zones](#configure-dns-in-azure-dns-private-zone).
 
