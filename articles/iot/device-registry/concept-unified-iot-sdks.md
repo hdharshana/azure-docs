@@ -86,8 +86,8 @@ The C SDK is designed for native C device applications and supports a range of d
 
 | Language | Package or source | Version | Documentation | Availability |
 |---|---|---|---|---|
-| .NET | `Microsoft.Azure.Iot.Device` | `1.0.0` | [.NET SDK documentation](/dotnet/api/overview/azure/iot) | Preview |
-| .NET | `Microsoft.Azure.Iot.Device` | `2.0.0-preview` | [.NET SDK documentation](/dotnet/api/overview/azure/iot) | Preview |
+| .NET | `Microsoft.Azure.Iot.Device` | `1.1.0` | [nuget v1.1.0](https://www.nuget.org/packages/Microsoft.Azure.Iot.Device/1.1.0) | Preview |
+| .NET | `Microsoft.Azure.Iot.Device` | `2.0.0-preview2` |  [nuget v2.0.0-preview2](https://www.nuget.org/packages/Microsoft.Azure.Iot.Device/2.0.0-preview2) | Preview |
 | C | GitHub source | See C SDK documentation | [Unified C SDK documentation](https://github.com/Azure/azure-iot-sdk/blob/releases/public-preview/c/README.md) | Preview |
 
 
