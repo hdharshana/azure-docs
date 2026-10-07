@@ -35,7 +35,7 @@ You need the following permissions to create subscriptions for an EA:
 For more information, see [Understand Azure Enterprise Agreement administrative roles in Azure](understand-ea-roles.md).
 
 > [!NOTE]
-> **Sign-in directory requirement:** Enterprise Administrators and Account Owners must be signed in to their **primary Microsoft Entra directory**, also referred to as their primary tenant, to create an Enterprise Agreement subscription. Subscription creation isn't supported while the user is signed in to another directory as a guest, irrespective of their Microsoft Entra role or permissions in that directory.
+> **Sign-in directory requirement:** Enterprise Administrators and Account Owners must sign in to their **primary Microsoft Entra directory**, also referred to as their primary tenant, to create an Enterprise Agreement subscription. Subscription creation isn't supported while the user is signed in to another directory as a guest, irrespective of their Microsoft Entra role or permissions in that directory.
 
 ## Create an EA subscription
 
