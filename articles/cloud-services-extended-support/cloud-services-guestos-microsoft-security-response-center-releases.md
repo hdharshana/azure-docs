@@ -4809,7 +4809,7 @@ The following tables show the Microsoft Security Response Center (MSRC) updates 
 | N/A | 4014514 |May .NET nonsecurity rollup |2.63 |May 9, 2017 |
 | N/A | [4019216] |May nonsecurity rollup |3.50 |May 9, 2017 |
 | N/A | 4014503 |May .NET nonsecurity rollup |3.50 |May 9, 2017 |
-| N/A | [4014506] |May .NET nonsecurity rollup |3.50 |May 9, 2017 |
+| N/A | 4014506 |May .NET nonsecurity rollup |3.50 |May 9, 2017 |
 | N/A | [4014509] |May .NET nonsecurity rollup |3.50 |May 9, 2017 |
 | N/A | [4014513] |May .NET nonsecurity rollup |3.50 |May 9, 2017 |
 | N/A | [4019215] |May nonsecurity rollup |4.43 |May 9, 2017 |
@@ -4856,7 +4856,7 @@ The following tables show the Microsoft Security Response Center (MSRC) updates 
 | Rel 17-04 |  [4014661]  |Internet explorer |2.61, 3.48, 4.41 | April 11, 2017 |
 | Rel 17-04 |  [4014550]; [4014560]; [4014562]; [4014556]; [4014574] |.NET Security |4.41 | April 11, 2017 |
 | Rel 17-04 |  [4014564]; [4014572]; [4014549] |.NET Security |3.48 | April 11, 2017 |
-| Rel 17-04 |  4014566; [4014552]; [4014573]; [4014558]  |.NET Security |2.61 | April 11, 2017 |
+| Rel 17-04 |  4014566; [4014552]; [4014573]; 4014558  |.NET Security |2.61 | April 11, 2017 |
 | Rel 17-04 |  [4015546]; [4015547]; [4015548]; [4015217]  |CVE-2017-0181 |5.6 | April 11, 2017 |
 | Rel 17-04 |  [4015546]; [4015547]; [4015548]; [4015217]  |CVE-2017-0163; CVE-2017-0183; CVE-2017-0184; CVE-2017-0184; CVE-2017-0185; CVE-2017-0168 |2.61, 3.48, 4.41 | April 11, 2017 |
 | Rel 17-04 |  [4015546]; [4015547]; [4015548]; [4015217]  |CVE-2017-0178; CVE-2017-0179; CVE-2017-0162; CVE-2017-0169 |4.41 | April 11, 2017 |
@@ -5069,7 +5069,7 @@ The following tables show the Microsoft Security Response Center (MSRC) updates 
 | MS16-019 |3137893 |Security Update for .NET Framework to Address Remote Code Execution |4.29, 3.36, 2.48 |February 9, 2016 |
 | MS16-021 |[3133043] |Security Update for NPS RADIUS Server to Address Denial of Service |4.29, 3.36, 2.48 |February 9, 2016 |
 | Microsoft Security Advisory |[3109853] |Update to Improve TLS Interoperability |4.29, 3.36 |February 9, 2016 |
-| Re-Release - MS15-101 |[3089662] |Vulnerabilities in .NET Framework Could Allow Elevation of Privilege |4.29, 3.36, 2.48 |February 9, 2016 |
+| Re-Release - MS15-101 |3089662 |Vulnerabilities in .NET Framework Could Allow Elevation of Privilege |4.29, 3.36, 2.48 |February 9, 2016 |
 | Re-Release - MS15-118 |3104507 |Security Updates for .NET Framework to Address Elevation of Privilege |4.29, 3.36, 2.48 |February 9, 2016 |
 | Re-Release - MS15-128 |[3104503] |Security Updates for Microsoft Graphics Component to Address Remote Code Execution |4.29, 3.36, 2.48 |February 9, 2016 |
 
@@ -5129,7 +5129,7 @@ The following tables show the Microsoft Security Response Center (MSRC) updates 
 | MS15-096 |[3072595] |Vulnerability in Active Directory Service Could Allow Denial of Service |4.24, 3.31, 2.43 |September 8, 2015 |
 | MS15-097 |[3089656] |Vulnerabilities in Microsoft Graphics Component Could Allow Elevation of Privilege |4.24, 3.31, 2.43 |September 8, 2015 |
 | MS15-098 |[3089669] |Vulnerabilities in Windows Journal Could Allow Remote Code Execution |4.24, 3.31, 2.43 |September 8, 2015 |
-| MS15-101 |[3089662] |Vulnerabilities in .NET Framework Could Allow Elevation of Privilege |4.24, 3.31, 2.43 |September 8, 2015 |
+| MS15-101 |3089662 |Vulnerabilities in .NET Framework Could Allow Elevation of Privilege |4.24, 3.31, 2.43 |September 8, 2015 |
 | MS15-102 |[3089657] |Vulnerabilities in Windows Task Management Could Allow Elevation of Privilege |4.24, 3.31, 2.43 |September 8, 2015 |
 | MS15-105 |[3091287] |Vulnerability in Windows Hyper-V Could Allow Security Feature Bypass |4.24 |September 8, 2015 |
 
