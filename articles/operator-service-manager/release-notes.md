@@ -638,7 +638,7 @@ This 2606.03 Azure Operator Service Manager release bundles together changes acr
 * Dependency versions: Go/1.26.4 - Helm/3.18.4 - Azure Linux 3.0.20260517
 
 ### Release updates to improve quality
-The following bug fixes, defect resolutions, or usability improvements are delivered with this release, for either Network Function Operator (NFO) or resource provider (RP) components.
+This release delivers the following bug fixes, defect resolutions, and usability improvements for Network Function Operator (NFO) and resource provider (RP) components.
 * NFO - [523366] Fix delete failure propagation by using delete operationId.
 * NFO - [532657] Fix refuse operation on component CR with stale deletionTimestamp.
 * NFO - [537357] Parameterize NFO controller manager resource allocation during installation.
