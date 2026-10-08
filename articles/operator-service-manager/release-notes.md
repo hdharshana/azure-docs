@@ -34,7 +34,7 @@ All releases are produced compliant with Microsoft’s Secure Development Lifecy
 The following release is the latest generally available release.
 
 ## Release 2609.01
-This 2609.01 Azure Operator Service Manager release bundles together changes across RP, NFO, CLI and Github product components. 
+This 2609.01 Azure Operator Service Manager release bundles together changes across RP, NFO, CLI, and GitHub product components.
 
 ### Release details
 * Release Date: 2026-09-30
