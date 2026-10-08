@@ -64,7 +64,7 @@ The following bug fixes, defect resolutions, or usability improvements are deliv
 * CVE	- Address a total of twenty-seven CVEs in this release.
 
 ## Release 2609.02
-This 2609.02 Azure Operator Service Manager release bundles together changes across RP, NFO, CLI and Github product components. 
+This 2609.02 Azure Operator Service Manager release bundles together changes across RP, NFO, CLI, and GitHub product components.
 
 ### Release details
 * Release date: 2026-09-30
