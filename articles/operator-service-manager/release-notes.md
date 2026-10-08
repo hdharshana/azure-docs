@@ -647,6 +647,6 @@ The following bug fixes, defect resolutions, or usability improvements are deliv
 ### Release updates to improve security
 * NFO - [531790] CFS network isolation for NFO pipelines.
 * NFO - [536344] Upgrade Go runtime to 1.26.4.
-* RP - [2879109] SFI: MSRC vulberability fix.
+* RP - [2879109] SFI: MSRC vulnerability fix.
 * RP - [2825307] SFI: 1ES open source vulnerabilities
 * CVE - A total of 17 direct CVEs are resolved.
