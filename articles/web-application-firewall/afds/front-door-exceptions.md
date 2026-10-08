@@ -22,10 +22,6 @@ In some cases, WAF might block requests that are safe and expected for your appl
 
 Only the next generation of WAF engine supports exceptions, and you can use them only if your managed ruleset version is DRS 2.1, or later. For more information, see [DRS rule groups and rules](waf-front-door-drs.md).
 
-> [!IMPORTANT]
-> Exceptions in Azure Front Door Web Application Firewall (WAF) is currently in PREVIEW.
-> See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
-
 ## Define request attributes
 
 When you create an exception, specify which request attributes identify the traffic that should bypass WAF evaluation. Supported attributes include:
