@@ -73,7 +73,7 @@ This 2609.02 Azure Operator Service Manager release bundles together changes acr
 * RP release version: 1.0.3464-580
 * CLI extension release version: [2.0.0b6](https://github.com/Azure/azure-cli-extensions/blob/main/src/aosm/HISTORY.rst)
 * Is NFO update required: Yes, update only
-* Dependency Versions: Go/1.26.6 - Helm/4.1.4 - Azure Linux 3.0 (Latest)
+* Dependency versions: Go/1.26.6 - Helm/4.1.4 - Azure Linux 3.0 (Latest)
 
 ### Release updates to improve quality
 The following bug fixes, defect resolutions, or usability improvements are delivered with this release, for either Network Function Operator (NFO) or resource provider (RP) components.
