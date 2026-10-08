@@ -81,7 +81,7 @@ This release delivers the following bug fixes, defect resolutions, and usability
 
 ### Release updates to improve security
 * NFO - [584007] Resolve redeploy mar container image.
-* CVE	- A total of seven CVEs are addressed in this release.
+* CVE - Address a total of seven CVEs in this release.
 
 ## Release notes for all releases 
 The following generally available releases are listed in order from oldest to newest.
