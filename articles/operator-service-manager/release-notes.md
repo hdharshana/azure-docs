@@ -645,7 +645,7 @@ The following bug fixes, defect resolutions, or usability improvements are deliv
 * RP - [2875423] Set SNS orchestration timeout for delete actions to a maximum of 2h25m.
 
 ### Release updates to improve security
-* NFO - [531790] CFS Network Isolation for NFO Pipelines.
+* NFO - [531790] CFS network isolation for NFO pipelines.
 * NFO - [536344] Upgrade go runtime to 1.26.4.
 * RP - [2879109] SFI: MSRC vulberability fix.
 * RP - [2825307] SFI: 1ES open source vulnerabilities
