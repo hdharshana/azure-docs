@@ -61,7 +61,7 @@ The following bug fixes, defect resolutions, or usability improvements are deliv
 * NFO - [552634] Update Geneva MCR image versions.
 * NFO - [565450] Resolve container registry vulns.
 * NFO - [584007] Resolve redeploy mar container image.
-* CVE	- A total of twenty-seven CVEs are addressed in this release.
+* CVE	- Address a total of twenty-seven CVEs in this release.
 
 ## Release 2609.02
 This 2609.02 Azure Operator Service Manager release bundles together changes across RP, NFO, CLI and Github product components. 
