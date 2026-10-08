@@ -53,7 +53,7 @@ The following bug fixes, defect resolutions, or usability improvements are deliv
 * NFO - [551756] Improve NFO component lifecycle logs.
 * NFO - [561226] Standardize webhook logging keys and add durationMs.
 * NFO - [564360] Improve artifact controller event logging.
-* NFO - [571918] use Info log level for transient ACR retry attempts.
+* NFO - [571918] Use Info log level for transient ACR retry attempts.
 * NFO - [545020] Add S360 monthly vuln triage skill for NFO.
   
 ### Release updates to improve security
