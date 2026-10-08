@@ -69,7 +69,7 @@ This 2609.02 Azure Operator Service Manager release bundles together changes acr
 ### Release details
 * Release Date: 2026-09-30
 * R2D approvals: 29.1630
-* NFO Release Version: 3.0.3557-264
+* NFO release version: 3.0.3557-264
 * RP Release Version: 1.0.3464-580
 * CLI Extension Release Version: [2.0.0b6](https://github.com/Azure/azure-cli-extensions/blob/main/src/aosm/HISTORY.rst)
 * Is NFO update required: YES, Update only
