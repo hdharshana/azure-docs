@@ -642,7 +642,7 @@ The following bug fixes, defect resolutions, or usability improvements are deliv
 * NFO - [523366] Fix delete failure propagation by using delete operationId.
 * NFO - [532657] Fix refuse operation on component CR with stale deletionTimestamp.
 * NFO - [537357] Parameterize NFO controller manager resource allocation during installation.
-* RP - [2875423] Set SNS orchestration timeout for delete actions to maximum 2h25m.
+* RP - [2875423] Set SNS orchestration timeout for delete actions to a maximum of 2h25m.
 
 ### Release updates to improve security
 * NFO - [531790] CFS Network Isolation for NFO Pipelines.
