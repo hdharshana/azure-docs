@@ -629,7 +629,7 @@ The following bug fixes, defect resolutions, or usability improvements are deliv
 This 2606.03 Azure Operator Service Manager release bundles together changes across RP, NFO, CLI, and GitHub product components. 
 
 ### Release details
-* Release Date: 2026-06-30
+* Release date: 2026-06-30
 * R2D Approvals: 240920
 * NFO Release Version: 3.0.3462-255
 * RP Release Version: 1.0.3464-580
