@@ -139,7 +139,7 @@ The following table shows connectivity locations and the service providers for e
 | **Phoenix** | [EdgeConneX PHX01](https://www.edgeconnex.com/locations/americas/phoenix-az/) | 1 | West US 3 | &check; | `AT&T NetBond`<br/>`Cox Business Cloud Port`<br/>`Lumen (CenturyLink Cloud Connect)`<br/>`DE-CIX`<br/>`Megaport`<br/>`Zayo` |
 | **Phoenix2** | [PhoenixNAP](https://phoenixnap.com/) | 1 | West US 3 | &check; | `Lumen (CenturyLink Cloud Connect)`<br/>`Digital Realty`<br/>`GTT`<br/>`Iron Mountain` |
 | **Portland** | [EdgeConnex POR01](https://www.edgeconnex.com/locations/north-america/portland-or/) | 1 | West US 2 | &check; | `Ziply Fiber` |
-| **Pune** | [STT GDC Pune DC1](https://www.sttelemediagdc.in/our-data-centres-in-india) | 2 | Central India | &check; | `Airtel`<br/>`Lightstorm`<br/>`SIFY`<br/>`Tata Communications` |
+| **Pune** | [STT GDC Pune DC1](https://www.sttgdc.com/in-en/locations/pune) | 2 | Central India | &check; | `Airtel`<br/>`Lightstorm`<br/>`SIFY`<br/>`Tata Communications` |
 | **Quebec City** | [Vantage](https://vantage-dc.com/data_centers/quebec-city-data-center-campus/) | 1 | Canada East | &check; | `Bell Canada`<br/>`Fibrenoire`<br/>`Megaport`<br/>`RISQ`<br/>`Telus` |
 | **Queretaro (Mexico)** | [KIO Networks QR01](https://www.kio.tech/) | 4 | Mexico Central | &check; | `Axtel`<br/>`Cirion Technologies`<br/>`C3ntro`<br/>`Console Connect (PCCW Global Limited)`<br/>`DE-CIX`<br/>`Equinix`<br/>`Flo Networks`<br/>`KIO`<br/>`MCM Telecom`<br/>`Megaport`<br/>`Transtelco` |
 | **Quincy** | Sabey Datacenter - Building A | 1 | West US 2 | &check; | `Ziply Fiber` |

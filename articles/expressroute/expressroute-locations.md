@@ -199,7 +199,7 @@ The following table shows locations by service provider. If you want to view ava
 | **[`REANNZ`](https://www.reannz.co.nz/products-and-services/cloud-connect/)** | &check; | &check; | Auckland |
 | **`RedCLARA`** | &check; | &check; | Sao Paulo |
 | **[`Reliance Jio`](https://www.jio.com/business/services/connectivity/cloud-connect/)** | &check; | &check; | Chennai<br/>Mumbai |
-| **[`Retelit`](https://www.retelit.it/EN/Home.aspx)** | &check; | &check; | Milan |
+| **[`Retelit`](https://retelit.it/en/)** | &check; | &check; | Milan |
 | **`RISQ`** |&check; | &check; | Quebec City<br/>Montreal |
 | **`SCSK`** |&check; | &check; | Tokyo3 |
 | **[`Sejong Telecom`](https://www.sejongtelecom.net/)** | &check; | &check; | Seoul |
