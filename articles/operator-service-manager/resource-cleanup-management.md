@@ -25,7 +25,7 @@ Upon attempted deletion of an `artifact manifest`, these references are checked 
 To purge the untagged artifacts, an Azure CLI command is run. Valid use-case scenarios include: An administrator executing the command ad-hoc, an automated customer pipeline executing the command, or a time-based scheduler, such as crontab, executing the command. The delayed purge approach provides extra time for any necessary manual validation or approvals, to ensure deletion accuracy or to revert a delete request entirely.
 
 ## Changes to artifact manifest resource type
-In order to support the expanded `artifact manifest` resource type specifications, changes are introduced to the resource provider API, starting with version `2025-03-30`. The following sections describe the behavior of AOSM before, and after, implementing this feature change. Migration to this new expanded resource type is optional and migration is discussed laster in this article.
+To support the expanded `artifact manifest` resource type specifications, changes are introduced to the resource provider API, starting with version `2025-03-30`. The following sections describe the behavior of AOSM before, and after, implementing this feature change. Migration to this new expanded resource type is optional and migration is discussed later in this article.
 
 ### Artifact manifest uses strong correlation
 The `artifact manifest` resource type has a strong correlation to helm artifacts (images and charts) uploaded into an artifact-store backing ACR. All artifacts used by a nfApp are kept in uniquely versioned artifact manifest instances. This builds reference connections between artifacts and nfApps. 
