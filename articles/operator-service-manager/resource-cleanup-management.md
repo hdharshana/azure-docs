@@ -126,7 +126,7 @@ No condition prevented deletion of `artifact manifest` resource type.
 For successful deletion, the `artifact manifest` must not contain any tagged resource references.
 
 ### Artifact manifest purge untagged
-Purge untagged artifacts using Azure CLI command `az acr repository delete` given appropriate scheduling parameters.
+Purge untagged artifacts by using the Azure CLI command `az acr repository delete` with the appropriate scheduling parameters.
 
 #### Before `2025-03-30` 
 No condition prevented purging of deleted artifacts.
