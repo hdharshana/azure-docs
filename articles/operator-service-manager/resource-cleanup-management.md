@@ -134,7 +134,7 @@ No condition prevented purging of deleted artifacts.
 #### From `2025-03-30`
 The following Azure CLI command can be used to purge artifacts. The command can be scheduled via crontab or run on-demand.
 
-_Powershell Example:_
+_PowerShell example:_
 ```powershell
 az acr manifest list-metadata -n myRegistry –r myRepository --query "[?tags[0]==null].digest" -o tsv | %{ az acr repository delete -n myRegistry --image myRepository@$_ --yes }
 ```
