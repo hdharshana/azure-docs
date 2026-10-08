@@ -76,7 +76,7 @@ This 2609.02 Azure Operator Service Manager release bundles together changes acr
 * Dependency versions: Go/1.26.6 - Helm/4.1.4 - Azure Linux 3.0 (Latest)
 
 ### Release updates to improve quality
-The following bug fixes, defect resolutions, or usability improvements are delivered with this release, for either Network Function Operator (NFO) or resource provider (RP) components.
+This release delivers the following bug fixes, defect resolutions, and usability improvements for Network Function Operator (NFO) and resource provider (RP) components.
 * NFO - [585024] Summarize and truncate error messages.
 
 ### Release updates to improve security
