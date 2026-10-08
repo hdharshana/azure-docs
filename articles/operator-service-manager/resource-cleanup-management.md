@@ -101,7 +101,7 @@ No pathing requirements when uploading artifacts.
 * testapp
 
 #### From `2025-03-30`
-Pathing requirements enforced for artifacts in `artifact manifest` resource type.
+Pathing requirements are enforced for artifacts in the `artifact manifest` resource type.
 
 **Repositories**
 * cnfmanifest/nginx
