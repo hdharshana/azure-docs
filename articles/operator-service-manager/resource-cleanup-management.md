@@ -143,7 +143,7 @@ _Bash example:_
 az acr manifest list-metadata $(destination_acr_name).azurecr.io/$repo --query "[?tags[0]==null].digest" -o tsv --only-show-errors | while read -r line; do az acr repository delete -n $(destination_acr_name) --image "$repo@$line" --yes
 ```
 > [!NOTE]
-> Proper RBAC permissions is required for command execution. Generally, the either `ArcDelete` or `Container Registry Repository Contributor` roles are needed. Without proper permissions, any attempt to execute returns a `Error: authentication required` result.
+> You need proper RBAC permissions to run this command. Generally, you need either the `ArcDelete` or `Container Registry Repository Contributor` roles. If you don't have the right permissions, the command returns an `Error: authentication required` result.
 
 ### NSDV/NFDV updated artifact manifest reference
 NSDV and NFDV include reference to `artifact manifest` resource type.
