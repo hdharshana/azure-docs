@@ -18,7 +18,7 @@ Before this feature, to clean-up AOSM publisher resources a user first executes 
 * Where helm charts reference artifacts in non-Azure ACRs, it's difficult to figure out references. 
 
 ## Publisher resource clean-up new approach
-This feature introduces an automated two-step process that first untags, and then later purges, unused artifacts when a `artifact manifest` is deleted. To support this capability, the `artifact manifest` resource type is expanded to include references between an artifact, such as a helm chart or container image, and other resources, such as Network Function Design Version (NFDV) or `NSDV`. 
+This feature introduces an automated two-step process that first untags, and then later purges, unused artifacts when an `artifact manifest` is deleted. To support this capability, the `artifact manifest` resource type is expanded to include references between an artifact, such as a helm chart or container image, and other resources, such as Network Function Design Version (NFDV) or `NSDV`. 
 
 Upon attempted deletion of an `artifact manifest`, these references are checked to ensure the artifact isn't associated to any in-use resources. If this validation passes, artifacts are marked for deletion (untagged) and a success message is returned. If this validation fails, the deletion request results in a failure and returns an error message indicating the artifact is found to be in-use, along with the resource which still using it. The following is an example of a failure message: `The resource '<artifactmanifest resourceId>' has some resources attached to it. The dependent resources are: "<NSDV/NFDV resource ids>"`
 
