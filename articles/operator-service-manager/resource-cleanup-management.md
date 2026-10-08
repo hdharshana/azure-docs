@@ -138,7 +138,7 @@ _PowerShell example:_
 ```powershell
 az acr manifest list-metadata -n myRegistry –r myRepository --query "[?tags[0]==null].digest" -o tsv | %{ az acr repository delete -n myRegistry --image myRepository@$_ --yes }
 ```
-_Bash Example:_
+_Bash example:_
 ```bash
 az acr manifest list-metadata $(destination_acr_name).azurecr.io/$repo --query "[?tags[0]==null].digest" -o tsv --only-show-errors | while read -r line; do az acr repository delete -n $(destination_acr_name) --image "$repo@$line" --yes
 ```
