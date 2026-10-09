@@ -13,10 +13,7 @@ ms.date: 03/11/2026
 
 This article describes how to enable Extended Security Updates (ESUs) and continue to run software that reached its end-of-support lifecycle in Azure VMware Solution. ESUs allow older versions of software to run in a supported manner by continuing to receive security updates and critical patches. In Azure, which includes Azure VMware Solution, ESUs are free of charge for extra years after their end of support. For more information on timelines, see [Extended Security Updates for SQL Server and Windows Server](https://www.microsoft.com/windows-server/extended-security-updates).
 
-The following sections describe how to configure SQL Server and Windows Server virtual machines (VMs) for no-cost ESUs in Azure VMware Solution. The process is distinct to the Azure VMware Solution private cloud architecture.
-
-> [!NOTE]
-> The no-cost ESU offer depends on the SQL Server version. Supported SQL Server ESUs for versions earlier than 2016 are free on Azure VMware Solution. SQL Server 2016 and later versions are billed. For availability by platform, see [What are Extended Security Updates? - SQL Server](https://learn.microsoft.com/en-us/sql/sql-server/end-of-support/sql-server-extended-security-updates?view=sql-server-ver17&tabs=azure-other#esu-availability-by-platform).
+The following sections describe how to configure SQL Server and Windows Server virtual machines (VMs) for no-cost ESUs in Azure VMware Solution. The process is distinct to the Azure VMware Solution private cloud architecture. SQL Server 2014 ESUs are available at no cost on Azure VMware Solution. Starting with SQL Server 2016, when you migrate your workload to SQL Server on Azure VMs or Azure VMware Solution, you no longer receive ESUs at no cost. ESUs for SQL Server 2016 and later versions are billed. The configuration process is specific to the Azure VMware Solution private cloud architecture.
 
 ## Configure SQL Server and Windows Server for ESUs in Azure VMware Solution
 
